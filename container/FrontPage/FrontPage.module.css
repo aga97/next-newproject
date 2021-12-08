@@ -1,0 +1,18 @@
+.FrontContainer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.FrontContent {
+  text-align: center;
+  margin: 0 auto;
+}
+.FrontBtn {
+  color: #fff;
+  background-color: #78909c;
+  border-radius: 2px;
+}
+.FrontContext {
+  margin: 10px 0;
+}

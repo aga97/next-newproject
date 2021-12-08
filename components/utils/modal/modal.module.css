@@ -1,0 +1,42 @@
+.ModalWrap {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: white;
+}
+
+.ModalBackground {
+  position: fixed;
+  top:0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.CloseBtn{
+  align-self: flex-end;
+  padding: 10px;
+  background-color: #78909c;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.CloseBtn:hover{
+  background-color: #a7c0cd;
+  color: #4b636e;
+}
+.CloseBtn:focus{
+  background-color: #a7c0cd;
+  color: #4b636e;
+}
+
+.ModalContent{
+
+}

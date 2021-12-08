@@ -1,0 +1,32 @@
+.HeaderWrap {
+  width: 100%;
+  height: 50px;
+  background-color: #78909c;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+}
+
+.HeaderWrap .HeaderContent {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.HeaderWrap .HeaderContent .HeaderItem {
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+}
+.HeaderWrap .HeaderContent .HeaderItem a {
+  display: block;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+}
+.HeaderWrap .HeaderContent .HeaderItem:hover {
+  background-color: #a7c0cd;
+  color: #4b636e;
+}
+.HeaderWrap .HeaderContent .HeaderItem:focus {
+}
