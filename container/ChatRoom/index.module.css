@@ -1,0 +1,42 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 50px;
+  height: 70vh;
+}
+
+.chatWrap {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+
+.chatArea {
+  width: 100%;
+  height: 90%;
+  padding: 10px 0;
+  overflow: scroll;
+}
+
+.chatArea .chatItem {
+  margin: 5px 10px;
+  padding: 0 10px;
+  min-height: 30px;
+  line-height: 30px;
+  width: fit-content;
+  max-width: 60%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 7px;
+  word-break: break-all;
+}
+
+.chatInput {
+  width: 100%;
+  height: 7%;
+  margin-bottom: 3%;
+  background-color: #fafafa;
+}

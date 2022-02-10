@@ -1,11 +1,15 @@
-import { SyntheticEvent, useContext } from 'react';
-import { ModalContext } from '../../components/utils/modal/modalContext';
+import {SyntheticEvent, useContext, useEffect, useState} from 'react';
+import { useRouter } from 'next/router';
 
+import { ModalContext } from '../../components/utils/modal/modalContext';
 import useInput from '../../hooks/useInput';
+import Filter from './components/filter';
+
 import styles from './FrontPage.module.css';
 
 function FrontPage() {
   const { handleModal } = useContext(ModalContext);
+  const router = useRouter();
 
   //region Inputs
 
@@ -13,6 +17,13 @@ function FrontPage() {
   const passwordInput = useInput((value: string) => value.trim() !== '');
 
   //endregion
+
+  const [query, setQuery] = useState<any>('');
+  useEffect(() => {
+    // console.log(router.);
+    console.log(router.query);
+    setQuery(router.query);
+  }, [router.query]);
 
   //region Handlers
   const handleSubmit = (event: SyntheticEvent) => {
@@ -24,6 +35,11 @@ function FrontPage() {
     }
 
     handleModal('2 thing all inputted');
+  };
+
+  const handleFilterSubmit = (event: SyntheticEvent) => {
+    event.preventDefault();
+    router.push('?location=true');
   };
   //endregion
 
@@ -62,6 +78,10 @@ function FrontPage() {
           />
         </div>
         <button type="submit" className={styles.FrontBtn} onClick={handleSubmit}>SUBMIT</button>
+        <Filter label="location1" isTrue={query?.location} />
+        {/*<Filter label="location2" />*/}
+        <button type="submit" className={styles.FrontBtn} onClick={handleFilterSubmit}>APPLY</button>
+        { query?.location }
       </div>
     </div>
   );

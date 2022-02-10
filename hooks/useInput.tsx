@@ -12,7 +12,7 @@ const useInput = (validateValue: (value: string) => boolean) => {
     const identifier = setTimeout(() => {
       setValueIsValid(validateValue(enteredValue));
       setHasError(!valueIsValid && isTouched);
-    }, 200);
+    }, 50);
 
     return () => {
       clearTimeout(identifier);
