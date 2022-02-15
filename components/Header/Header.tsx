@@ -9,6 +9,7 @@ function Header() {
       <ul className={styles.HeaderContent}>
         <li className={styles.HeaderItem}><Link href="/front-page">FrontPage</Link></li>
         <li className={styles.HeaderItem}><Link href="/chat-room">ChatRoom</Link></li>
+        <li className={styles.HeaderItem}><Link href="/study-page">StudyPage</Link></li>
       </ul>
     </div>
   );
